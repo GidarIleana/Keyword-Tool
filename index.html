@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+	<head>
+		<!--Keywordy
+			Created Gidar Ileana!-->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-48082792-2"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'UA-48082792-2');
+		gtag('event', 'check_seo', {
+		  'event_category': 'engagement',
+		  'event_label': 'method',
+		  'value': '1'
+		});
+		</script>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    	<title>Optimizați-vă conținutul cu instrumentul SEO on-page&mdash; Keywordy </title>
+	    <meta name="date" content="2020-06-15">
+	    <meta name="author" content="Gidar Ileana">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-title" content="Keyword Tool">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="robots" content="index, follow">
+		<meta name="twitter:card" content="summary">
+		<meta name="subject" content="Search engine optimisation tool.">
+		<link rel="stylesheet" type="text/css" href="css/keywordy.css">
+		<link rel="stylesheet" type="text/css" href="css/super.css">
+		<link rel="stylesheet" type="text/css" href="css/supermobile.css">
+		<link rel="icon" href="images/favicon.ico" type="image/png">
+		<link rel="apple-touch-icon" href="/images/touch-icon-iphone.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/touch-icon-ipad.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/touch-icon-iphone-retina.png">
+		<link rel="apple-touch-icon" sizes="167x167" href="images/touch-icon-ipad-retina.png">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header class="keygrad">
+			<div class="col-w">
+			<div class="col-2">
+				<h1 style="color:green;">KEYWORDY</h1>
+				<h1 style="color:white;">Optimizarea conținutului</h1>
+			</div>
+			<div class="col-2">
+				<!--Include the nav-->
+			</div>
+			<!--Include the breadcrumb-->
+			</div>			
+		</header>
+		<section class="winbar">
+			<p><span class="caution base">Recomandare: efectuați cercetări de cuvinte cheie înainte de a utiliza acest instrument!<span class="keyresx">&times;</span></span></p>
+		</section>
+		<main id="on_page_seo" class="base">
+			<form id="contenttemplate" autocomplete="off">
+				<fieldset>
+					<section class="superior">
+						<h1>Instrument SEO On-Page</h1>
+						<p>Împărțiți cuvântul cheie țintă în cuvinte cheie principale și secundare.</p>
+						<div class="par">
+							<label for="keyword1" class="listed">Cuvânt cheie primar<span class="asterix">*</span></label><br>
+							<input id="keyword1" class="key" type="text" name="keyword1" placeholder="Cuvânt cheie principal" required="required" tabindex="1">
+						</div>
+						<div class="par">
+							<label for="keyword2" class="listed">Cuvânt cheie secundar<span class="asterix">*</span></label><br>
+							<input id="keyword2" class="key" type="text" name="keyword2" placeholder="Cuvânt cheie secundar" required="required" tabindex="2"><br>
+						</div>
+			</section>
+			<section class="superior">
+				<section class="subsection">
+					<!-- Title section -->
+					<label class="listed" for="title">Titlu<span class="asterix">*</span><br><span class="detail">Titlul paginii utilizat de motoarele de căutare</span></label><span id="titlecount" class="counter" title="Character count, including spaces"></span><br>
+					<input id="title" class="basic" type="text" name="title" minlength="55" maxlength="70" placeholder="Titlul paginii &mdash; Parent | Site" required="required" oninput="previewSnippet()" tabindex="3">
+				</section>
+				<section class="subsection">
+					<!-- URI section -->
+					<label class="listed" for="uri" title="Uniform Resource Identifier">URI<span class="asterix">*</span><br><span class="detail">Spațiile sunt convertite automat în cratime</span></label><span id="uricount" class="counter" title="Character count"></span><br>
+					<input id="uri" class="basic" type="text" name="uri" maxlength="70" placeholder="formatul de exemplu include cuvântul cheie țintă" required="required" oninput="urlOptimize()" tabindex="4">
+				</section>
+				<section class="subsection">
+					<!-- Meta description section -->
+					<label class="listed" for="metadesc">Meta descriere<span class="asterix">*</span><br><span class="detail">Descrierea paginii utilizate frecvent de motoarele de căutare</span></label><span id="metacount" class="counter" title="Character count, including spaces"></span><br>
+					<textarea id="metadesc" class="txtformat basic" name="metadesc" data-stripe="number" rows="4" cols="35" minlength="120" maxlength="190" placeholder="Descrierea paginii" required="required" oninput="previewSnippet()" tabindex="5"></textarea>
+				</section>
+				<section id="mobile" class="basic">
+					<p>Previzualizare mobilă</p>
+					<label class="prechange">
+						<input id="switch" type="checkbox" name="switch">
+						<span class="move bit"></span>
+					</label>
+				</section>
+				<div id="snippet" class="basic" style="display: block;">
+					<!-- Search preview section -->
+					<h3>Previzualizare fragment Google Search</h3>
+					<!--For dynamically generated content-->
+					<div class="r_col">
+						<div id="r_title">
+							<h3><a id="snippettitle">Titlul paginii apare aici.</a></h3>
+						</div>
+						<div class="_g">
+							<div id="r_url">
+								<cite id="snippeturi">https://www.keywordy.com</cite>
+							</div>
+							<div id="r_metadesc">
+								<p><span id="snippetdesc">Descrierea meta apare aici.</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="mobile_snippet" class="basic" style="display: none;">
+					<!-- Mobile search preview section -->
+					<h3>Previzualizare fragment Google Search (mobile-friendly)</h3>
+					<!--For dynamically generated content-->
+					<div class="mobile_frame">
+						<div id="mobile-friendly">
+							<div class="m_col">
+								<a class="separator">
+									<div id="m_title">
+										<h3><span id="mobiletitle">Titlul paginii apare aici.</span></h3>
+									</div>
+									<div id="m_url">
+										<cite id="mobileuri">https://www.keywordtool.com</cite>
+									</div>
+								</a>
+								<hr class="m_hr">
+								<div id="m_metadesc">
+									<p><span id="mobiledesc">Descrierea meta apare aici.</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="superior">
+				<section class="subsection">
+					<!-- Heading 1 section -->
+					<label class="listed" for="heading1">Titlu principal<span class="asterix">*</span></label><span id="headingcount" class="counter" title="Word count"></span><br>
+					<input id="heading1" class="basic" type="text" name="heading1" placeholder="Titlul paginii: <h1>" required="required" tabindex="6">
+				</section>
+				<section class="subsection">
+					<!-- Body text section -->
+					<label class="listed" for="textbody">Corpul textului<span class="asterix">*</span></label><span id="contentcount" class="counter" title="Word count"></span><br>
+					<textarea id="textbody" class="txtformat basic" name="textbody" data-stripe="number" rows="4" cols="50" minlength="300" placeholder="Conținutul paginii" required="required" tabindex="7"></textarea>
+				</section>
+			</section>
+			<section class="superior">
+				<div id="_seo">
+					<!--Check SEO button-->
+					<button id="checkseo" class="fx-button" onclick="gtag('event', 'check_seo', 'engagement', 'method', '1');" type="button" tabindex="8">Verifică SEO</button>
+					<!-- Download on-page content -->
+					<a id="download-content" class="fx-button" href="" onclick="download_on_page_csv()" download="on-page-seo_superkeywordy.csv">Descarcă conținut</a>
+				</div>
+			</section>
+		</fieldset>
+	</form>
+<aside id="kw_analytics">
+		<table id="_seoresults">
+			<caption>Analiză cuvinte cheie</caption>
+			<tbody>
+				<tr>
+					<th class="stats" colspan="3">Cuvânt cheie principal<span class="info_icon tool1 tooltip">&#9432;<span class="tooltipinfo">Primary keyword is the broad keyword or subject of the page.</span></span><span id="note-prime" class="note-it"></span></th>
+				</tr>
+				<tr>
+					<th class="statistics">Nr. cuvintelor cheie <span class="info_icon tool1 tooltip">&#9432;<span class="tooltipinfo">De câte ori cuvântul cheie apare în următoarele: titlu, URI, meta descriere, titlu principal și textul corpului.</span></span></th>
+					<th class="statistics">Nr.total de cuvinte <span class="info_icon tool1 tooltip">&#9432;<span class="tooltipinfo">Numărul total de cuvinte din următoarele: titlu, URI, meta descriere, titlu principal și textul corpului.</span></span></th>
+					<th class="statistics">Densitatea cuvintelor cheie <span class="info_icon tool1 tooltip">&#9432;<span class="tooltipinfo">% rata: De câte ori apare cuvântul cheie primar în toate cele 6 secțiuni.</span></span></th>
+				</tr>
+				<tr>
+					<td id="tkcount" class="metrics"></td>
+					<td id="totalcount" class="metrics"></td>
+					<td id="tkdensity" class="metrics">%</td>
+				</tr>
+				<tr>
+					<th class="statistics" colspan="3">Analiza secțiunii titlului<span class="info_icon tool1 tooltip">&#9432;<span class="tooltipinfo">Analizează prezența cuvintelor cheie în etichetele titlului.</span></span></th>
+				</tr>
+				<tr>
+					<td colspan="2"><span id="result1" class="resh"></span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><span id="result2" class="resh"></span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><span id="result3" class="resh"></span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><span id="result4" class="resh"></span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><span id="result5" class="resh"></span></td>
+				</tr>
+				<tr>
+					<th class="statistics" colspan="3">Analiza textului corpului<span class="info_icon tool1 tooltip">&#9432;<span class="tooltipinfo">Analizează prezența cuvintelor cheie în corp.</span></span></th>
+				</tr>
+				<tr>
+					<td id="pkfirst" colspan="3"></td>
+				</tr>
+				<tr>
+					<th class="stats statistics" colspan="3">Cuvânt cheie secundar<span class="info_icon tool1 tooltip">&#9432;<span class="tooltipinfo">Cuvântul cheie secundar modifică pe cel principal, îl extinde sau este legat de acesta.</span></span><span id="note-nonprime" class="note-it"></span></th>
+				</tr>
+				<tr>
+					<th class="statistics" colspan="2">Nr de cuvinte cheie</th>
+					<!-- <th>Total word count</th> -->
+					<th class="statistics">Densitatea cuvintelor cheie <span class="info_icon tool1 tooltip">&#9432;<span class="tooltipinfo">% rata: De câte ori apare cuvântul cheie secundar în toate cele 6 secțiuni.</span></span></th>
+				</tr>
+				<tr>
+					<td id="tkcount2" class="metrics"></td>
+					<td id="totalcount2" class="metrics"></td>
+					<td id="tkdensity2" class="metrics">%</td>
+				</tr>
+				<tr>
+					<th class="statistics" colspan="3">Analiza secțiunii titlului</th>
+				</tr>
+				<tr>
+					<td colspan="2"><span id="result6" class="resh"></span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><span id="result7" class="resh"></span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><span id="result8" class="resh"></span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><span id="result9" class="resh"></span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><span id="result10" class="resh"></span></td>
+				</tr>
+				<tr>
+					<th class="statistics" colspan="3">Analiza textului corpului</th>
+				</tr>
+				<tr>
+					<td id="skfirst" colspan="3"></td>
+				</tr>
+				<tr>
+					<th class="stats statistics" colspan="3">Cuvântul cheie țintă [doar potrivire exactă]<span id="exact-match" class="note-it"></span><br><small class="fact">Când cuvintele cheie primare și secundare apar împreună</small></th>
+				</tr>
+				<tr>
+					<th class="statistics" colspan="2">Numărul de cuvinte cheie</th>
+					<!-- <th>Total word count</th> -->
+					<th class="statistics">Densitatea cuvintelor cheie</th>
+				</tr>
+				<tr>
+					<td id="tkcount3" class="metrics"></td>
+					<td id="totalcount3" class="metrics"></td>
+					<td id="tkdensity3" class="metrics">%</td>
+				</tr>
+				<tr>
+					<th class="statistics" colspan="3">Analiza textului corpului</th>
+				</tr>
+				<tr>
+					<td id="trgfirst" colspan="3"></td>
+				</tr>
+				<tr>
+					<td id="bodywordcount" colspan="3"></td>
+				</tr>
+				<tr>
+					<th class="stats statistics" colspan="3">Top 20 cuvinte<br><small class="fact">20-celemai frecvente cuvinte din titlul principal și textul corpului</small></th>
+				</tr>
+				<tr>
+					<th class="statistics">Număr</th>
+					<th class="statistics">Cuvinte</th>
+					<th class="statistics">Densitate</th>
+				</tr>
+				<tr>
+					<td id="freqCount" class="fact"></td>
+					<td id="topwords" class="fact"></td>
+					<td id="topwordDensity" class="fact"></td>
+				</tr>
+				<tr>
+					<td id="freqCount1" class="fact"></td>
+					<td id="topwords1" class="fact"></td>
+					<td id="topwordDensity1" class="fact"></td>
+				</tr>
+				<tr>
+					<td id="freqCount2" class="fact"></td>
+					<td id="topwords2" class="fact"></td>
+					<td id="topwordDensity2" class="fact"></td>
+				</tr>
+				<tr>
+					<td id="freqCount3" class="fact"></td>
+					<td id="topwords3" class="fact"></td>
+					<td id="topwordDensity3" class="fact"></td>
+				</tr>
+				<tr>
+					<td id="freqCount4" class="fact"></td>
+					<td id="topwords4" class="fact"></td>
+					<td id="topwordDensity4" class="fact"></td>
+				</tr>
+				<tr>
+					<td id="freqCount5" class="fact"></td>
+					<td id="topwords5" class="fact"></td>
+					<td id="topwordDensity5" class="fact"></td>
+				</tr>
+				<tr>
+					<td id="freqCount6" class="fact"></td>
+					<td id="topwords6" class="fact"></td>
+					<td id="topwordDensity6" class="fact"></td>
+				</tr>
+				<tr>
+					<td id="freqCount7" class="fact"></td>
+					<td id="topwords7" class="fact"></td>
+					<td id="topwordDensity7" class="fact"></td>
+				</tr>
+				<tr>
+					<td id="freqCount8" class="fact"></td>
+					<td id="topwords8" class="fact"></td>
+					<td id="topwordDensity8" class="fact"></td>
+				</tr>
+				<tr>
+					<td id="freqCount9" class="fact"></td>
+					<td id="topwords9" class="fact"></td>
+					<td id="topwordDensity9" class="fact"></td>
+				</tr>
+				<tr>
+					<td id="freqCount10" class="fact"></td>
+					<td id="topwords10" class="fact"></td>
+					<td id="topwordDensity10" class="fact"></td>
+				</tr>
+				<tr>
+					<td id="freqCount11" class="fact"></td>
+					<td id="topwords11" class="fact"></td>
+					<td id="topwordDensity11" class="fact"></td>
+				</tr>
+				<tr>
+					<td id="freqCount12" class="fact"></td>
+					<td id="topwords12" class="fact"></td>
+					<td id="topwordDensity12" class="fact"></td>
+				</tr>
+				<tr>
+					<td id="freqCount13" class="fact"></td>
+					<td id="topwords13" class="fact"></td>
+					<td id="topwordDensity13" class="fact"></td>
+				</tr>
+				<tr>
+					<td id="freqCount14" class="fact"></td>
+					<td id="topwords14" class="fact"></td>
+					<td id="topwordDensity14" class="fact"></td>
+				</tr>
+				<tr>
+					<td id="freqCount15" class="fact"></td>
+					<td id="topwords15" class="fact"></td>
+					<td id="topwordDensity15" class="fact"></td>
+				</tr>
+				<tr>
+					<td id="freqCount16" class="fact"></td>
+					<td id="topwords16" class="fact"></td>
+					<td id="topwordDensity16" class="fact"></td>
+				</tr>
+				<tr>
+					<td id="freqCount17" class="fact"></td>
+					<td id="topwords17" class="fact"></td>
+					<td id="topwordDensity17" class="fact"></td>
+				</tr>
+				<tr>
+					<td id="freqCount18" class="fact"></td>
+					<td id="topwords18" class="fact"></td>
+					<td id="topwordDensity18" class="fact"></td>
+				</tr>
+				<tr>
+					<td id="freqCount19" class="fact"></td>
+					<td id="topwords19" class="fact"></td>
+					<td id="topwordDensity19" class="fact"></td>
+				</tr>
+			</tbody>
+		</table>
+		<table id="table">
+		</table>
+		<div class="rules">
+			<button class="drop">Ghid practic optimizare<span class="plus">&times;</span></button>
+			<div class="guidelines">
+				<p><span class="asterix">*</span>&nbsp;Câmp obligatoriu</p>
+				<ol>
+					<li><span class="subject">Cuvânt țintă</span><br>Cuvântul cheie țintă este subiectul principal al paginii. Este o frază cu potrivire largă care ar trebui să corespundă unui termen de căutare popular / relevant.
+						<ul>
+							<li><strong>Trebuie să fie unic</strong>, relativ cu site-ul tău.</li>
+							<li>Efectuați cercetarea de cuvinte cheie pentru a determina cuvântul cheie-țintă.</li>
+						</ul>
+					</li>
+					<li><span class="subject">Titlu</span><br>Includeți cuvântul cheie țintă în titlu; utilizați între 55 și 70 de caractere (inclusiv spații).</li>
+					<li><span class="subject">URI</span><br>Includeți cuvântul cheie țintă în URI. URI-urile sunt sensibile la majuscule; utilizați numai cu minuscule
+						<ul>
+							<li>Acest câmp convertește automat majuscule în minuscule, iar spațiile sunt înlocuite cu cratime.</li>
+						</ul>
+					</li>
+					<li><span class="subject">Meta descriere</span><br>Includeți cuvântul cheie țintă în meta description; utilizați între 120 și 190 de caractere (inclusiv spații).</li>
+					<li><span class="subject">Titlul principal</span><br>Acesta este <pre>&lt;h1&gt;</pre> tag. Includeți un cuvânt cheie țintă în rubrica principală a paginii, o singură dată. Mențineți titlurile scurte și concise.</li>
+					<li><span class="subject">Textul corpului</span><br>Includeți cuvântul cheie țintă în textul corpului, adică conținutul principal al paginii.
+						<ul>
+							<li>Nu există o lungime optimă a conținutului. Comparați numărul de cuvinte cu conținutul concurenților. Calitatea este <em>cheia</em>, not cantitatea!</li>
+							<li>Dacă<strong>densitatea cuvintelor cheie</strong>este mai mare decât 2.5%, redu-o; evită <strong>cuvintele de umplutură</strong>!
+								<ul>
+									<li>Densitatea cuvintelor cheie este viteza cu care apare cuvântul cheie în pagină<br><br><pre>% Rata = nr. de cuvinte cheie / lungimea conținutului</pre></li>
+								</ul>
+							</li>
+							<li><strong>Primul segment</strong>: primele 200 <em>poziția carcaterelor</em> într-o linie, începând de la zero.
+								<ul>
+									<li>Primul segment este de obicei prima propoziție a textului corpului.</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ol>
+			</div>
+		</div>
+	</aside>
+</main>
+<script src="js/keywordy.js"></script>
+<div id="warning" class="modal">
+	<section class="mode">
+		<div class="titlebar">
+			<span class="close cross">&times;</span>
+			<h3 class="modalhead">Important!</h3>
+		</div>
+		<p>Introduceți un titlu pentru a începe analiza SEO pe pagina.</p>
+	</section>
+</div>
+<div id="progbar" class="modal">
+	<div id="spinloader">
+	</div>
+</div>
+		<footer class="col-1 keygrad">
+			<div id="mask" class="modal">
+			</div>
+			<div class="col-w">
+				<address>&copy;<span id="year"></span>Keywordy<br>Developed by Gîdăr Ileana</address>
+			</div>
+			<script src="js/main.js"></script>
+		</footer>
+		<a id="pgscroll" class="sticky" href="" style="display: none">
+			<img class="scroll-img" src="images/up-arrow.svg" alt="arrow" width="30" height="30">
+		</a>
+	</body>
+</html>
